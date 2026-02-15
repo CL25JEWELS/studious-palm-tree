@@ -1,0 +1,22 @@
+{
+  "name": "@echoforge/desktop",
+  "version": "0.1.0",
+  "description": "EchoForge Electron desktop app",
+  "main": "dist/main.js",
+  "scripts": {
+    "dev": "electron .",
+    "build": "electron-builder",
+    "package:win": "electron-builder --win",
+    "package:mac": "electron-builder --mac",
+    "package:linux": "electron-builder --linux"
+  },
+  "dependencies": {
+    "@echoforge/core": "workspace:*",
+    "@echoforge/shared-types": "workspace:*"
+  },
+  "devDependencies": {
+    "electron": "^27.1.3",
+    "electron-builder": "^24.9.1"
+  },
+  "private": true
+}
