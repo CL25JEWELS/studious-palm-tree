@@ -1,0 +1,18 @@
+{
+  "name": "@looppad/core",
+  "version": "0.1.0",
+  "description": "Core engine and models for LoopPad",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "lint": "eslint src --ext .ts"
+  },
+  "keywords": ["audio", "web-audio", "sampler", "drum-machine"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/web": "^0.0.127"
+  }
+}
