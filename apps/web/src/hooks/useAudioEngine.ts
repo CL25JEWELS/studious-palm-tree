@@ -42,7 +42,7 @@ export const useAudioEngine = () => {
         void engineRef.current.dispose();
       }
     };
-  }, [tempo]);
+  }, []); // Empty dependency array - initialize only once
 
   const triggerPad = (padIndex: number, velocity: number = 1.0) => {
     if (!engineRef.current || !initialized) return;

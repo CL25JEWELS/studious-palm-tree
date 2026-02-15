@@ -61,6 +61,9 @@ export function gainToDb(gain: number): number {
  * Check if Web Audio API is supported
  */
 export function isWebAudioSupported(): boolean {
+  if (typeof window === 'undefined') {
+    return false; // Server-side or non-browser environment
+  }
   return typeof AudioContext !== 'undefined' || 
          typeof (window as unknown as { webkitAudioContext?: unknown }).webkitAudioContext !== 'undefined';
 }

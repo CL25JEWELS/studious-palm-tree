@@ -128,20 +128,27 @@ export class Transport {
 
   /**
    * Schedule a single step for playback
+   * TODO: Complete implementation to trigger actual pad sounds
+   * The time parameter will be used for scheduling triggers at the correct time
    */
-  private scheduleStep(stepIndex: number, _time: number): void {
+  private scheduleStep(stepIndex: number, time: number): void {
     if (!this.currentPattern) return;
 
     const step = this.currentPattern.steps[stepIndex];
     if (!step) return;
 
     // Trigger all pads in this step
-    step.triggers.forEach((_trigger) => {
-      // Convert ms offset to seconds and schedule
+    step.triggers.forEach((trigger) => {
+      // TODO: Implement actual sound triggering
       // const scheduledTime = time + (trigger.offset / 1000);
-      // Note: In a real implementation, we'd look up the pad -> instrument mapping
-      // and call: this.audioEngine.trigger(instrumentId, trigger.velocity, scheduledTime);
-      // For now, we're just demonstrating the scheduling mechanism
+      // Look up the pad -> instrument mapping and call:
+      // this.audioEngine.trigger(instrumentId, trigger.velocity, scheduledTime);
+      
+      // For now, this demonstrates the scheduling mechanism.
+      // In a complete implementation, this would integrate with a PadController
+      // that maps padId to instrumentId
+      void time; // Acknowledge unused parameter until implementation complete
+      void trigger; // Acknowledge unused parameter until implementation complete
     });
 
     // Update position
