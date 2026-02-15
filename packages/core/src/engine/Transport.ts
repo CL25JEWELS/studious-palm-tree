@@ -2,7 +2,7 @@
  * Transport - Handles playback timing, quantization, and scheduling
  */
 
-import type { TransportState, Pattern, PatternStep } from '../models/index.js';
+import type { TransportState, Pattern } from '../models/index.js';
 import type { AudioEngine } from './AudioEngine.js';
 
 export class Transport {
@@ -129,16 +129,18 @@ export class Transport {
   /**
    * Schedule a single step for playback
    */
-  private scheduleStep(stepIndex: number, time: number): void {
+  private scheduleStep(stepIndex: number, _time: number): void {
     if (!this.currentPattern) return;
 
     const step = this.currentPattern.steps[stepIndex];
     if (!step) return;
 
     // Trigger all pads in this step
-    step.triggers.forEach((trigger) => {
-      const offsetTime = time + (trigger.offset / 1000); // Convert ms to seconds
+    step.triggers.forEach((_trigger) => {
+      // Convert ms offset to seconds and schedule
+      // const scheduledTime = time + (trigger.offset / 1000);
       // Note: In a real implementation, we'd look up the pad -> instrument mapping
+      // and call: this.audioEngine.trigger(instrumentId, trigger.velocity, scheduledTime);
       // For now, we're just demonstrating the scheduling mechanism
     });
 
