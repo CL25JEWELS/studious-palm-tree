@@ -1,0 +1,322 @@
+EchoForge - Project Context & Audience Framing
+==============================================
+
+VISION
+------
+EchoForge is the democratization of electronic music production. We're building a tool that removes the barriers between musical ideas and their realization, making professional-grade loop-based composition accessible to anyone with a creative spark.
+
+TARGET AUDIENCE
+--------------
+
+Primary Personas:
+
+1. The Aspiring Producer (Age 16-25)
+   - Loves EDM, trap, hip-hop
+   - Consumes music production content on YouTube/TikTok
+   - Intimidated by traditional DAWs (too complex)
+   - Wants to create tracks like their favorite artists
+   - Limited budget for equipment/software
+   - Mobile-first user
+
+2. The Beat Maker (Age 20-35)
+   - Creates beats for fun or side income
+   - Uses FL Studio, Ableton, or Logic
+   - Needs quick workflow for sketching ideas
+   - Values portability and instant access
+   - Shares work on SoundCloud, Instagram
+   - Appreciates professional features
+
+3. The Content Creator (Age 18-30)
+   - Makes videos for YouTube, TikTok, Instagram
+   - Needs original music for content
+   - No formal music training
+   - Values speed and simplicity
+   - Wants unique, copyright-free tracks
+   - Mobile and desktop user
+
+4. The Live Performer (Age 25-40)
+   - DJs, electronic artists, experimental musicians
+   - Performs at clubs, festivals, events
+   - Needs reliable, low-latency performance tool
+   - Values visual feedback and audience engagement
+   - Wants to stand out with unique performances
+   - Desktop/tablet user
+
+Secondary Personas:
+
+5. The Music Educator (Age 30-50)
+   - Teaches music production or electronic music
+   - Needs accessible tools for students
+   - Values educational features and guided learning
+   - Requires classroom-friendly licensing
+   - Desktop/tablet user
+
+6. The Casual Musician (Age 25-45)
+   - Music is a hobby, not a career
+   - Has basic music knowledge
+   - Wants creative outlet without commitment
+   - Values fun and experimentation
+   - All platforms
+
+CORE VALUES
+-----------
+
+1. Accessibility
+   - Zero-to-music in under 60 seconds
+   - No installation barriers (web-first)
+   - Free tier with generous features
+   - Minimal hardware requirements
+
+2. Power
+   - Professional audio quality
+   - Real-time performance
+   - Advanced features when you need them
+   - No compromises on core functionality
+
+3. Community
+   - Share and discover creations
+   - Learn from others' projects
+   - Collaborative remixing
+   - Attribution and credit built-in
+
+4. Joy
+   - Immediate creative gratification
+   - Visual feedback that feels alive
+   - Delightful interactions
+   - Success is audible and visible
+
+COMPETITIVE POSITIONING
+-----------------------
+
+We're NOT competing with:
+- Professional DAWs (Ableton, Logic, FL Studio) - too complex, desktop-only
+- Notation software (Sibeone, Finale) - different use case
+- Audio editors (Audacity, Adobe Audition) - different workflow
+
+We ARE an alternative to:
+- Launchpad/Novation Grid apps - but cross-platform and more powerful
+- GarageBand - but focused on loops and faster workflow
+- Soundtrap/BandLab - but better performance and offline-first
+
+Our differentiators:
+- Sub-10ms latency (performance-grade)
+- Cross-platform from day one
+- Offline-first with optional cloud
+- Social remix features baked in
+- Free and open sound library
+- One-click sharing
+
+TECHNICAL PHILOSOPHY
+-------------------
+
+1. Web-First, Not Web-Only
+   - Start with web to maximize reach
+   - Progressive enhancement for native apps
+   - Share code across platforms
+   - Native performance where it matters
+
+2. Offline-First
+   - Works without internet
+   - Local storage is primary
+   - Cloud is optional enhancement
+   - No vendor lock-in
+
+3. Performance is a Feature
+   - Audio latency is non-negotiable
+   - Smooth 60fps UI
+   - Instant feedback on every interaction
+   - Optimize for perceived performance
+
+4. Open but Sustainable
+   - Open-source core engine
+   - Proprietary cloud/social features
+   - Community sound packs
+   - Fair pricing model
+
+USER JOURNEY
+-----------
+
+First-Time Experience:
+1. Land on site/app
+2. See featured projects playing
+3. Click "Remix" or "Start Fresh"
+4. Immediately hear sound on first tap
+5. Experiment with grid
+6. Discover effects and controls
+7. Save first project (prompts account creation)
+8. Share to social or download
+
+Returning User:
+1. Open app (loads last project)
+2. Continue working or browse projects
+3. Try new sound pack
+4. Record sequence
+5. Apply effects
+6. Export or share
+
+Power User:
+1. Load project
+2. Fine-tune parameters
+3. Utilize keyboard shortcuts
+4. Integrate with MIDI controller
+5. Export stems for further production
+6. Collaborate with others
+
+DESIGN PRINCIPLES
+----------------
+
+1. Grid is King
+   - The pad grid is the primary interface
+   - Everything else is secondary
+   - Grid should be visible at all times
+   - Touch/click targets must be generous
+
+2. Progressive Disclosure
+   - Start simple, reveal complexity
+   - Advanced features behind tap/click
+   - Defaults should sound good
+   - Easy to start, hard to master
+
+3. Visual Feedback
+   - Every action has immediate visual response
+   - Sound is visualized (waveforms, meters)
+   - State is always clear
+   - Errors are gentle and helpful
+
+4. Consistency
+   - Patterns repeat across features
+   - Same gesture = same result
+   - Visual language is cohesive
+   - Cross-platform consistency
+
+SOUND LIBRARY STRATEGY
+---------------------
+
+Launch Content:
+- 5-10 high-quality sound packs
+- Cover popular genres (EDM, Hip-Hop, Ambient, Trap)
+- Mix of samples and synth presets
+- All Creative Commons or proprietary
+
+Growth Strategy:
+- Open submission for creators
+- Curated marketplace
+- Revenue share for creators
+- Community voting/ranking
+
+Quality Standards:
+- 48kHz, 24-bit minimum
+- Proper loop points
+- Consistent levels
+- Tagged and categorized
+
+SUCCESS METRICS
+--------------
+
+Engagement:
+- Time from landing to first sound: <10s
+- Projects created per user per month: >5
+- Session duration: >10min average
+- Return rate: >40% weekly
+
+Performance:
+- Audio latency: <10ms (p95)
+- UI frame rate: >55fps (p95)
+- Crash rate: <0.1%
+- Load time: <2s (p95)
+
+Growth:
+- Monthly active users: 10K (3 months), 100K (12 months)
+- Projects shared: >1000/month
+- Sound pack downloads: >5000/month
+- Conversion to paid: >5%
+
+Community:
+- Remixes created: >500/month
+- Sound packs submitted: >10/month
+- Forum posts: >200/month
+- Social mentions: >1000/month
+
+BRAND VOICE
+----------
+
+We are:
+- Encouraging, not condescending
+- Professional, not pretentious
+- Playful, not childish
+- Technical, not jargony
+
+We say:
+- "Create" not "compose"
+- "Sound pack" not "sample library"
+- "Pad" not "trigger"
+- "Project" not "song" or "track"
+
+We avoid:
+- Music theory terminology (unless necessary)
+- Technical audio jargon
+- Elitist language
+- Negative framings
+
+LAUNCH STRATEGY
+---------------
+
+Phase 1: Private Alpha (Weeks 1-2)
+- Internal team + close friends
+- Focus on core stability
+- Iterate on UX based on feedback
+
+Phase 2: Public Beta (Weeks 3-6)
+- Invite-only access
+- Influencer partnerships
+- Reddit/HN launch
+- Gather user feedback
+
+Phase 3: Public Launch (Week 7+)
+- Product Hunt launch
+- Press outreach
+- Social media campaign
+- Community events
+
+Phase 4: Growth (Ongoing)
+- Content marketing
+- Tutorial videos
+- Sound pack partnerships
+- Feature expansions
+
+LONG-TERM VISION
+---------------
+
+Year 1:
+- Establish core user base
+- Prove product-market fit
+- Build initial sound library
+- Launch mobile apps
+
+Year 2:
+- Scale to 1M+ users
+- Monetize via subscriptions
+- Expand sound library
+- Add collaboration features
+
+Year 3+:
+- Become the go-to tool for loop-based music
+- Integration with streaming platforms
+- Educational partnerships
+- Hardware partnerships (controllers)
+- Potential acquisition or continued independence
+
+GUIDING QUESTIONS
+----------------
+
+For every feature/decision, ask:
+1. Does this help users make music faster?
+2. Does this add unnecessary complexity?
+3. Will this work on all target platforms?
+4. Does this align with our values?
+5. Would our primary personas use this?
+
+If the answer to 1, 3, 4, or 5 is "no," reconsider.
+If the answer to 2 is "yes," simplify or cut.
+
+Remember: Our mission is to make music creation accessible, powerful, and joyful. Every decision should serve that mission.

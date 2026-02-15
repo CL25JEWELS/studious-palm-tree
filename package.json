@@ -1,0 +1,44 @@
+{
+  "name": "echoforge",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Real-time loop-pad music creation app with social remix platform",
+  "author": "EchoForge Team",
+  "license": "MIT",
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "turbo run dev",
+    "dev:web": "pnpm --filter @echoforge/web dev",
+    "dev:mobile": "pnpm --filter @echoforge/mobile start",
+    "dev:desktop": "pnpm --filter @echoforge/desktop dev",
+    "build": "turbo run build",
+    "build:web": "pnpm --filter @echoforge/web build",
+    "build:mobile": "pnpm --filter @echoforge/mobile build",
+    "build:desktop": "pnpm --filter @echoforge/desktop build",
+    "test": "turbo run test",
+    "test:unit": "vitest run",
+    "test:e2e": "playwright test",
+    "lint": "turbo run lint",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "typecheck": "turbo run typecheck",
+    "clean": "turbo run clean && rm -rf node_modules"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.1",
+    "@typescript-eslint/eslint-plugin": "^6.13.2",
+    "@typescript-eslint/parser": "^6.13.2",
+    "eslint": "^8.55.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.1.0",
+    "turbo": "^1.11.2",
+    "typescript": "^5.3.3",
+    "vitest": "^1.0.4"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "pnpm": ">=8.0.0"
+  },
+  "packageManager": "pnpm@8.12.1"
+}
