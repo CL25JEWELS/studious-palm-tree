@@ -1,6 +1,14 @@
 // Core audio engine exports
 export const version = '1.0.0';
 
+// Export all type definitions
+export * from './types';
+
+// Export all error classes and factories
+export * from './errors';
+
+// Keep existing AudioEngineConfig for backward compatibility
+// (also exported from types.ts)
 export interface AudioEngineConfig {
   sampleRate?: number;
   bufferSize?: number;
