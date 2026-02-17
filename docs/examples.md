@@ -306,7 +306,7 @@ const packs = ['hiphop-essentials', 'edm-basics', 'trap-drums'];
 await Promise.all(packs.map(id => soundPackService.loadSoundPack(id)));
 
 // Check if pack is loaded
-if (soundPackService.isPack Loaded('hiphop-essentials')) {
+if (soundPackService.isPackLoaded('hiphop-essentials')) {
   console.log('Pack is ready to use');
 }
 
