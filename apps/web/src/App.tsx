@@ -7,6 +7,9 @@ import {
 } from '@looppad/core';
 import { Grid, TransportBar, RemixPanel } from './components';
 
+// Constants
+const PAD_AUTO_STOP_DELAY_MS = 500;
+
 export const App: React.FC = () => {
   // Initialize core systems
   const [engine] = useState(() => new AudioEngine({ logger: console }));
@@ -48,10 +51,10 @@ export const App: React.FC = () => {
     console.log('Pad triggered:', padId);
     padController.triggerPad(padId);
     
-    // Auto-stop after 500ms for demo
+    // Auto-stop after delay for demo
     setTimeout(() => {
       padController.stopPad(padId);
-    }, 500);
+    }, PAD_AUTO_STOP_DELAY_MS);
   };
 
   const handlePadRelease = (padId: number) => {
