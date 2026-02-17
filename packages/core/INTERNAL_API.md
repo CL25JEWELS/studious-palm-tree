@@ -105,8 +105,8 @@ interface ITransport {
 **Interface**:
 ```typescript
 interface ISoundLoader {
-  load(url: string): Result<AudioBuffer, LoopPadError>;
-  loadBatch(urls: string[]): Result<Map<string, AudioBuffer>, LoopPadError>;
+  load(url: string): Promise<Result<AudioBuffer, LoopPadError>>;
+  loadBatch(urls: string[]): Promise<Result<Map<string, AudioBuffer>, LoopPadError>>;
   getBuffer(url: string): Result<AudioBuffer, LoopPadError>;
   isLoaded(url: string): boolean;
   unload(url: string): Result<void, LoopPadError>;
@@ -115,7 +115,7 @@ interface ISoundLoader {
 ```
 
 **Boundaries**:
-- Loads and caches AudioBuffers
+- Loads and caches AudioBuffers asynchronously
 - Does NOT play sounds
 - Does NOT manage audio context
 - Provides buffers to other modules
@@ -316,7 +316,7 @@ type Result<T, E> =
 Usage:
 
 ```typescript
-const result = soundLoader.load('/sounds/kick.wav');
+const result = await soundLoader.load('/sounds/kick.wav');
 
 if (isSuccess(result)) {
   // TypeScript knows result.value is AudioBuffer
@@ -417,7 +417,7 @@ async function playSound(
   }
 
   // Load sound
-  const loadResult = soundLoader.load(url);
+  const loadResult = await soundLoader.load(url);
   if (isFailure(loadResult)) {
     console.error('Load failed:', loadResult.error.message);
     return;
