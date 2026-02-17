@@ -1,0 +1,17 @@
+{
+  "name": "studious-palm-tree",
+  "version": "1.0.0",
+  "description": "loop pad social network",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm test --workspaces --if-present"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
