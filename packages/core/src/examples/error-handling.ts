@@ -134,15 +134,15 @@ async function withRetry<T>(
 /**
  * Example 3: Error aggregation for batch operations
  */
-function batchLoadSounds(
+async function batchLoadSounds(
   urls: string[],
-  loadFn: (url: string) => Result<AudioBuffer, LoopPadError>
-): Result<Map<string, AudioBuffer>, LoopPadError[]> {
+  loadFn: (url: string) => Promise<Result<AudioBuffer, LoopPadError>>
+): Promise<Result<Map<string, AudioBuffer>, LoopPadError[]>> {
   const buffers = new Map<string, AudioBuffer>();
   const errors: LoopPadError[] = [];
 
   for (const url of urls) {
-    const result = loadFn(url);
+    const result = await loadFn(url);
     
     if (isSuccess(result)) {
       buffers.set(url, result.value);

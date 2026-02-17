@@ -64,7 +64,7 @@ async function loadAndPlaySound(
   url: string
 ): Promise<Result<void, LoopPadError>> {
   // Load the sound buffer
-  const loadResult = soundLoader.load(url);
+  const loadResult = await soundLoader.load(url);
   
   if (isFailure(loadResult)) {
     if (isBufferLoadError(loadResult.error)) {

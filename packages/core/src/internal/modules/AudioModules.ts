@@ -97,12 +97,12 @@ export interface ISoundLoader {
   /**
    * Load an audio file from URL
    */
-  load(url: string): Result<AudioBuffer, LoopPadError>;
+  load(url: string): Promise<Result<AudioBuffer, LoopPadError>>;
 
   /**
    * Load multiple audio files
    */
-  loadBatch(urls: string[]): Result<Map<string, AudioBuffer>, LoopPadError>;
+  loadBatch(urls: string[]): Promise<Result<Map<string, AudioBuffer>, LoopPadError>>;
 
   /**
    * Get a loaded buffer by URL
