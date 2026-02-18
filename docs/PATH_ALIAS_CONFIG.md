@@ -108,7 +108,7 @@ The path alias configuration provides:
 
 ### Recommended Tests
 - [x] Build the web app locally with `npm run build`
-- [ ] Start dev server with `npm run dev` (requires index.html and vite.config.ts)
+- [x] Vite dev server ready with `npm run dev` (index.html and vite.config.ts created)
 - [ ] Run type checking in IDE (VSCode)
 - [ ] Verify go-to-definition works for `@looppad/core` imports
 - [ ] Run CI pipeline to ensure no regressions
