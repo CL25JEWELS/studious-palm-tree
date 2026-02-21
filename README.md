@@ -2,6 +2,20 @@
 
 Loop pad social network - A TypeScript monorepo for a loop-based audio application
 
+## Documentation
+
+📚 **[Audio Engine Blueprint](docs/audio-engine-blueprint.md)** - Comprehensive architecture documentation
+- Web Audio API graph and low-latency routing for 8-16 pads
+- Latency targets and strategies (sub-10ms end-to-end)
+- Per-pad signal chain specifications
+- UI component map and design system
+
+🎨 **[Architecture Diagrams](docs/architecture-diagrams.md)** - Visual quick reference
+- Audio graph overview with ASCII diagrams
+- Latency budget breakdown
+- Signal flow diagrams
+- UI wireframes for desktop, tablet, and mobile
+
 ## Project Structure
 
 This is a monorepo managed with npm workspaces:
@@ -9,8 +23,9 @@ This is a monorepo managed with npm workspaces:
 ```
 ├── packages/
 │   └── core/          # @looppad/core - Core audio engine
-└── apps/
-    └── web/           # @looppad/web - Web application
+├── apps/
+│   └── web/           # @looppad/web - Web application
+└── docs/              # Architecture and design documentation
 ```
 
 ## Prerequisites
