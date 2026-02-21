@@ -32,3 +32,27 @@ export class AudioEngine {
     this.logger?.log('AudioEngine stopped');
   }
 }
+
+// Export PadController
+export {
+  PadController,
+  type PadState,
+  type PadControllerConfig,
+} from './PadController';
+
+// Export Transport
+export {
+  Transport,
+  type TransportConfig,
+  type TransportState,
+  type TransportEventType,
+  type TransportListener,
+} from './Transport';
+
+// Export ProjectManager
+export {
+  ProjectManager,
+  type ProjectMetadata,
+  type ProjectData,
+  type ProjectManagerConfig,
+} from './ProjectManager';
